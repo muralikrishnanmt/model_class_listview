@@ -39,7 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
           'Users',
         ),
       ),
-      body: ListView.builder(
+      body: ListView.separated(
+        separatorBuilder: (context, index) {
+          return const Divider(
+            color: Colors.black,
+            thickness: 1,
+          );
+        },
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.all(8.0),
