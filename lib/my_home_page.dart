@@ -51,6 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text(usersList[index].address!.city!),
                 Text(usersList[index].address!.geo!.lat!),
                 Text(usersList[index].address!.geo!.lng!),
+                Text(usersList[index].company!.name!),
+                Text(usersList[index].company!.catchPhase!),
               ],
             ),
           );
